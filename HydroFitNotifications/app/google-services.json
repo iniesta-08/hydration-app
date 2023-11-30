@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788584152370",
+    "project_id": "hydrofitnotifications",
+    "storage_bucket": "hydrofitnotifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788584152370:android:805fe87b5c749d2e0a6b2b",
+        "android_client_info": {
+          "package_name": "com.bn.hydrofitnotifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF0jTCosDltYoDeqeO0yC3DikCjRZ3ixk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
