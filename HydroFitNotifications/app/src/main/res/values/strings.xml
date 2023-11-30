@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HydroFitNotifications</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">HydroFit 1st Page</string>
+    <string name="second_fragment_label">HydroFit 2nd Page</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        HydroFit
+    </string>
+</resources>
