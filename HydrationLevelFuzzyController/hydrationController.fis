@@ -1,0 +1,56 @@
+[System]
+Name='Hydration'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Time since last drink'
+Range=[0 240]
+NumMFs=3
+MF1='Low':'trimf',[0 0 90]
+MF2='Medium':'trimf',[60 90 150]
+MF3='High':'trimf',[140 240 240]
+
+[Input2]
+Name='FitnessLevel'
+Range=[0 100]
+NumMFs=4
+MF1='Poor':'trimf',[0 25 50]
+MF2='Average':'trimf',[25 50 75]
+MF3='Good':'trimf',[50 75 100]
+MF4='Excellent':'trimf',[75 100 100]
+
+[Input3]
+Name='Amount of last drink'
+Range=[0 1000]
+NumMFs=3
+MF1='Small':'trimf',[0 0 250]
+MF2='Medium':'trimf',[250 400 650]
+MF3='High':'trimf',[650 1000 1000]
+
+[Output1]
+Name='Hydration level'
+Range=[0 10]
+NumMFs=3
+MF1='Low':'trimf',[0 0 3]
+MF2='Medium':'trimf',[3 5 8]
+MF3='High':'trimf',[8 10 10]
+
+[Rules]
+3 1 1, 1 (1) : 1
+2 2 0, 2 (1) : 1
+0 3 3, 3 (1) : 1
+1 3 0, 2 (1) : 1
+0 0 2, 2 (1) : 1
+3 4 0, 3 (1) : 1
+0 1 1, 1 (1) : 1
+2 2 3, 2 (1) : 1
+0 3 2, 3 (1) : 1
