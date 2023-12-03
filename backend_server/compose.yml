@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+
+  mongodb:
+    image: mongo # Official MongoDB image
+    ports:
+      - 27017:27017  # Expose MongoDB port
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root  # MongoDB root user
+      MONGO_INITDB_ROOT_PASSWORD: example  # MongoDB root password
+    volumes:
+      - mongodbdata:/data/db
+
+  app:
+    container_name: hydrofitserver
+    image: hydrofitserver:latest
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodbdata:
