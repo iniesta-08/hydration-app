@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Age"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Height"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Weight"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_margin="16dp"/>
+</LinearLayout>

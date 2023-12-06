@@ -29,6 +29,14 @@
 
         <receiver android:name=".WaterReminderReceiver" />
 
+        <receiver
+            android:name=".ActivityReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".InputActivity" />
+
+
     </application>
 
 </manifest>

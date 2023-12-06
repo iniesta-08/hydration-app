@@ -5,12 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:id="@+id/waterProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
     <EditText
         android:id="@+id/hydrationLevelEditText"
         android:layout_width="match_parent"
         android:hint="Enter Hydration Level"
         android:layout_height="48dp"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        android:layout_below="@id/waterProgressBar"
+        />
 
     <Button
         android:id="@+id/setHydrationLevelButton"
@@ -35,4 +48,22 @@
         android:text="Update Water Consumed"
         android:layout_below="@id/startReminderButton"
         android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/suggestActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggest Activity"
+        android:layout_below="@id/updateWaterConsumedButton"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/startInputButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Input"
+        android:layout_below="@id/suggestActivityButton"
+        android:layout_marginTop="16dp"/>
+
+
 </RelativeLayout>

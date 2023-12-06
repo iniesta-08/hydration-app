@@ -1,6 +1,6 @@
-# Water Reminder and Physical Activity Android App
+# Krithish GoliWater Reminder and Physical Activity Android App
 
-This Android application aims to assist individuals in maintaining adequate water intake and encouraging regular physical activity, especially for those who spend prolonged periods at a desk.
+## This Android application aims to assist individuals in maintaining adequate water intake and encouraging regular physical activity, especially for those who spend prolonged periods at a desk.
 
 ## Overview
 
