@@ -76,6 +76,7 @@ class NotificationReceiver : BroadcastReceiver() {
         } ?: 10000
 
         val edit = sharedPreferences?.edit()
+        
         edit?.putInt(ARG_GOAL_WATER, goalWater)
         edit?.putInt(ARG_GOAL_STEPS, goalSteps)
         edit?.apply()
