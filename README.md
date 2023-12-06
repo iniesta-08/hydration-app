@@ -52,7 +52,7 @@ To set up and run the project locally, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install Android Studio.
-3. Open the "Hydrofit" project in Android Studio.
+3. Open the "HydroFitApp-GK" project in Android Studio.
 4. Set up the Docker environment for the backend server.
 5. Build and run the Android application on your preferred emulator or physical device.
 
