@@ -33,7 +33,7 @@ The Android Studio Integrated Development Environment (IDE) is employed for the 
 To set up and run the project locally, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install Android Studio.
+2. Install Android Studio and make sure to run with latest android studio version (>= hedgehog).
 3. Open the "app-final" project in Android Studio.
 4. Set up the Docker environment for the backend server.
 5. In HydrofitApplication.kt set the value if constant IP to the IP of your server.
