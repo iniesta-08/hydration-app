@@ -1,22 +1,4 @@
-# HYDROFIT PYTHON BACKEND SERVER
-
-## Preqrequisites:
-* Have docker and docker-compose installed
-
-## Run Server
-```bash
-    docker-compose up
-```
-
-## Bring down server
-```bash
-    docker-compose down
-```
-
-## Run test cases
-```bash
-    docker exec -it hydrofit pytest
-```
+# HYDROFIT Mobile Application
 
 ## Overview
 
@@ -52,9 +34,29 @@ To set up and run the project locally, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install Android Studio.
-3. Open the "HydroFitApp-GK" project in Android Studio.
+3. Open the "app-final" project in Android Studio.
 4. Set up the Docker environment for the backend server.
+5. In HydrofitApplication.kt set the value if constant IP to the IP of your server.
 5. Build and run the Android application on your preferred emulator or physical device.
+
+To set up the server - 
+## Preqrequisites:
+* Have docker and docker-compose installed
+
+## Run Server
+```bash
+    docker-compose up
+```
+
+## Bring down server
+```bash
+    docker-compose down
+```
+
+## Run test cases
+```bash
+    docker exec -it hydrofitserver pytest
+```
 
 ## Dependencies
 

@@ -22,7 +22,7 @@ def get_user_id(name):
     return result[0]['_id']
 
 def test_createUser():
-    response = requests.post("http://localhost:5000/users", headers={"Content-Type": "application/json"}, data=json.dumps({"username": user}))
+    response = requests.post("http://localhost:5001/users", headers={"Content-Type": "application/json"}, data=json.dumps({"username": user}))
 
     res = list(users_collection.find({'username': user}))
     assert response.status_code == 200
@@ -32,7 +32,7 @@ def test_insert_data():
     for collection in timeseries_collections:
         val = random.randint(0,100)
         ts = int(datetime.utcnow().timestamp()*100)/100
-        response = requests.post(f"http://localhost:5000/data/{user}/{collection}", headers={"Content-Type": "application/json"},
+        response = requests.post(f"http://localhost:5001/data/{user}/{collection}", headers={"Content-Type": "application/json"},
                                   data = json.dumps({collection: val, 'timestamp': ts}))
 
         d = {f"metadata.{collection}": val, 'timestamp': ts}
@@ -53,13 +53,13 @@ def test_get_n_data():
         ts = int(datetime.utcnow().timestamp()*10)/10
         arr.append({'val': val, 'ts': ts})
 
-        response = requests.post(f"http://localhost:5000/data/{user}/{collection}", headers={"Content-Type": "application/json"},
+        response = requests.post(f"http://localhost:5001/data/{user}/{collection}", headers={"Content-Type": "application/json"},
                                   data = json.dumps({collection: val, 'timestamp': ts}))
         
         assert response.status_code == 200
         time.sleep(0.2)
     
-    response = requests.get(f'http://localhost:5000/data/{user}/{collection}', headers={"Content-Type": "application/json"}, data=json.dumps({"N": n}))
+    response = requests.get(f'http://localhost:5001/data/{user}/{collection}', headers={"Content-Type": "application/json"}, data=json.dumps({"N": n}))
 
     
     arr = arr[::-1]

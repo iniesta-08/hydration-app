@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HydroFit</string>
+    <string name="action_profile">Profile</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="info_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="step_counter_channel">Step counter</string>
+    <plurals name="step_count">
+        <item quantity="one">%d step today</item>
+        <item quantity="other">%d steps today</item>
+    </plurals>
+
+    <string name="steps">steps</string>
+    <string name="step_goal">Goal %s</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_height">Enter Height (In cms)</string>
+    <string name="enter_weight">Enter Weight (In Lbs)</string>
+    <string name="enter_pace">Enter Pace</string>
+    <string name="enter_step_length">Enter Shoe size</string>
+    <string name="submit">Submit</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="exercise_duration_minutes">Exercise Duration (minutes)</string>
+    <string name="enter_heart_rate">Enter Heart Rate</string>
+    <string name="update_logs">Update Logs</string>
+    <string name="record">Record</string>
+    <string name="enter_email">Enter Email</string>
+</resources>
